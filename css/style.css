@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slideImgs {
+    position: relative;
+    overflow: hidden;
+}
+
+.caption {
+    top: 50%;
+    left: 5%;
+    transform: translateX(1%)translateY(10%) !important;
+    -webkit-transform: translateX(1%)translateY(10%) !important;
+    -moz-transform: translateX(1%)translateY(10%) !important;
+    -ms-transform: translateX(1%)translateY(10%) !important;
+    -o-transform: translateX(1%)translateY(10%) !important;
+    padding: 5px 0px 0px 10px;
+}
+
+.boxContainer {
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.boxItem {
+    width: 40%;
+    height: 62vh;
+    background-image: url("../images/2.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close {
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    transform: translateX(2%) translateY(20%);
+    -webkit-transform: translateX(2%) translateY(20%);
+    -moz-transform: translateX(2%) translateY(20%);
+    -ms-transform: translateX(2%) translateY(20%);
+    -o-transform: translateX(2%) translateY(20%);
+}
+
+.boxItem i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.caption2 {
+    top: 70%;
+    left: 5%;
+    transform: translateX(1%)translateY(10%) !important;
+    -webkit-transform: translateX(1%)translateY(10%) !important;
+    -moz-transform: translateX(1%)translateY(10%) !important;
+    -ms-transform: translateX(1%)translateY(10%) !important;
+    -o-transform: translateX(1%)translateY(10%) !important;
+    padding: 5px 0px 0px 10px;
+}
+
+.IMG {
+    cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+    .boxItem {
+        width: 100% !important;
+        height: 80vh !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .boxItem {
+        width: 100% !important;
+        height: 80vh !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .boxItem {
+        width: 60% !important;
+        height: 80vh !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .boxItem {
+        width: 60% !important;
+        height: 80vh !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .boxItem {
+        width: 40% !important;
+        height: 62vh !important;
+    }
+}
